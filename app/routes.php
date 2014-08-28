@@ -18,5 +18,6 @@ Route::get('/', function()
 
 Route::get('/show_environment', function() {
     echo App::environment();
+    
     return;
 });
