@@ -15,3 +15,8 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::get('/show_environment', function() {
+    echo App::environment();
+    return;
+});

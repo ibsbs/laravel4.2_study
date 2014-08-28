@@ -24,11 +24,16 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
+// $env = $app->detectEnvironment(array(
 
-	'local' => array('homestead'),
+// 	'local' => array('homestead'),
 
-));
+// ));
+
+//配置 httpd.conf  SetEnv APP_ENV local
+$env = $app->detectEnvironment(function() {
+    return $_SERVER['APP_ENV'];
+});
 
 /*
 |--------------------------------------------------------------------------
