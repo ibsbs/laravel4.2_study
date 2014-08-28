@@ -198,3 +198,11 @@ Stack trace:
 #10 /Users/yangbo-webkaifa/Sites/laravel4.2_study/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(642): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
 #11 /Users/yangbo-webkaifa/Sites/laravel4.2_study/public/index.php(48): Illuminate\Foundation\Application->run()
 #12 {main} [] []
+[2014-08-28 16:21:43] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined function enabled()' in /Users/yangbo-webkaifa/Sites/laravel4.2_study/app/routes.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-08-28 16:21:44] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined function enabled()' in /Users/yangbo-webkaifa/Sites/laravel4.2_study/app/routes.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

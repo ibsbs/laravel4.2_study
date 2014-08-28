@@ -18,6 +18,7 @@ Route::get('/', function()
 
 Route::get('/show_environment', function() {
     echo App::environment();
+    //Kint::enabled(false);
     d($_SERVER);
     return;
 });
