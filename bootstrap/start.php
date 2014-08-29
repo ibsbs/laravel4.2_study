@@ -32,8 +32,8 @@ $app = new Illuminate\Foundation\Application;
 
 //配置 httpd.conf  SetEnv APP_ENV local
 $env = $app->detectEnvironment(function() {
-    return 'local';
-    //return  empty($_SERVER['APP_ENV'])? 'production': $_SERVER['APP_ENV'];
+    //return 'local';
+    return  empty($_SERVER['APP_ENV'])? 'production': $_SERVER['APP_ENV'];
 });
 
 /*
