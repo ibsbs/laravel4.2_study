@@ -13,12 +13,16 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+    return View::make('hello');
 });
 
 Route::get('/show_environment', function() {
     echo App::environment();
     //Kint::enabled(false);
-    d($_SERVER);
+    Kint::dump(Config::get('database.connections'));
+    $host_name = gethostbyaddr($_SERVER[ 'REMOTE_ADDR']);
+    d($host_name);
     return;
 });
+
+

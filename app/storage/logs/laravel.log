@@ -206,3 +206,127 @@ Stack trace:
 Stack trace:
 #0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
 #1 {main} [] []
+[2014-09-01 15:08:31] local.ERROR: exception 'ErrorException' with message 'Undefined index: my_iduoqian' in E:\wamp\www\laravel4.2_study\app\config\database.php:92
+Stack trace:
+#0 E:\wamp\www\laravel4.2_study\app\config\database.php(92): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'E:\wamp\www\lar...', 92, Array)
+#1 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Filesystem\Filesystem.php(46): require('E:\wamp\www\lar...')
+#2 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Config\FileLoader.php(77): Illuminate\Filesystem\Filesystem->getRequire('E:\wamp\www\lar...')
+#3 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Config\Repository.php(152): Illuminate\Config\FileLoader->load('local', 'database', NULL)
+#4 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Config\Repository.php(99): Illuminate\Config\Repository->load('database', NULL, '*::database')
+#5 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(208): Illuminate\Config\Repository->get('database.connec...')
+#6 E:\wamp\www\laravel4.2_study\app\routes.php(22): Illuminate\Support\Facades\Facade::__callStatic('get', Array)
+#7 E:\wamp\www\laravel4.2_study\app\routes.php(22): Illuminate\Support\Facades\Config::get('database.connec...')
+#8 [internal function]: {closure}()
+#9 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#10 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#12 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(776): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#13 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(746): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#14 E:\wamp\www\laravel4.2_study\vendor\barryvdh\laravel-debugbar\src\Barryvdh\Debugbar\Middleware.php(34): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#15 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Barryvdh\Debugbar\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#16 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#17 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#18 E:\wamp\www\laravel4.2_study\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#19 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(642): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#20 E:\wamp\www\laravel4.2_study\public\index.php(48): Illuminate\Foundation\Application->run()
+#21 {main} [] []
+[2014-09-01 15:08:45] local.ERROR: exception 'ErrorException' with message 'Undefined index: my_iduoqian' in E:\wamp\www\laravel4.2_study\app\config\database.php:92
+Stack trace:
+#0 E:\wamp\www\laravel4.2_study\app\config\database.php(92): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'E:\wamp\www\lar...', 92, Array)
+#1 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Filesystem\Filesystem.php(46): require('E:\wamp\www\lar...')
+#2 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Config\FileLoader.php(77): Illuminate\Filesystem\Filesystem->getRequire('E:\wamp\www\lar...')
+#3 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Config\Repository.php(152): Illuminate\Config\FileLoader->load('local', 'database', NULL)
+#4 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Config\Repository.php(99): Illuminate\Config\Repository->load('database', NULL, '*::database')
+#5 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(208): Illuminate\Config\Repository->get('database.connec...')
+#6 E:\wamp\www\laravel4.2_study\app\routes.php(22): Illuminate\Support\Facades\Facade::__callStatic('get', Array)
+#7 E:\wamp\www\laravel4.2_study\app\routes.php(22): Illuminate\Support\Facades\Config::get('database.connec...')
+#8 [internal function]: {closure}()
+#9 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#10 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#12 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(776): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#13 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(746): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#14 E:\wamp\www\laravel4.2_study\vendor\barryvdh\laravel-debugbar\src\Barryvdh\Debugbar\Middleware.php(34): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#15 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Barryvdh\Debugbar\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#16 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#17 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#18 E:\wamp\www\laravel4.2_study\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#19 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(642): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#20 E:\wamp\www\laravel4.2_study\public\index.php(48): Illuminate\Foundation\Application->run()
+#21 {main} [] []
+[2014-09-01 15:08:47] local.ERROR: exception 'ErrorException' with message 'Undefined index: my_iduoqian' in E:\wamp\www\laravel4.2_study\app\config\database.php:92
+Stack trace:
+#0 E:\wamp\www\laravel4.2_study\app\config\database.php(92): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'E:\wamp\www\lar...', 92, Array)
+#1 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Filesystem\Filesystem.php(46): require('E:\wamp\www\lar...')
+#2 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Config\FileLoader.php(77): Illuminate\Filesystem\Filesystem->getRequire('E:\wamp\www\lar...')
+#3 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Config\Repository.php(152): Illuminate\Config\FileLoader->load('local', 'database', NULL)
+#4 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Config\Repository.php(99): Illuminate\Config\Repository->load('database', NULL, '*::database')
+#5 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(208): Illuminate\Config\Repository->get('database.connec...')
+#6 E:\wamp\www\laravel4.2_study\app\routes.php(22): Illuminate\Support\Facades\Facade::__callStatic('get', Array)
+#7 E:\wamp\www\laravel4.2_study\app\routes.php(22): Illuminate\Support\Facades\Config::get('database.connec...')
+#8 [internal function]: {closure}()
+#9 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#10 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#12 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(776): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#13 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(746): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#14 E:\wamp\www\laravel4.2_study\vendor\barryvdh\laravel-debugbar\src\Barryvdh\Debugbar\Middleware.php(34): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#15 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Barryvdh\Debugbar\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#16 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#17 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#18 E:\wamp\www\laravel4.2_study\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#19 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(642): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#20 E:\wamp\www\laravel4.2_study\public\index.php(48): Illuminate\Foundation\Application->run()
+#21 {main} [] []
+[2014-09-01 15:17:54] production.ERROR: exception 'InvalidArgumentException' with message 'Command "evn" is not defined.' in E:\wamp\www\laravel4.2_study\vendor\symfony\console\Symfony\Component\Console\Application.php:564
+Stack trace:
+#0 E:\wamp\www\laravel4.2_study\vendor\symfony\console\Symfony\Component\Console\Application.php(190): Symfony\Component\Console\Application->find('evn')
+#1 E:\wamp\www\laravel4.2_study\vendor\symfony\console\Symfony\Component\Console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 E:\wamp\www\laravel4.2_study\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
+[2014-09-01 15:23:12] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Function name must be a string' in E:\wamp\www\laravel4.2_study\app\routes.php:23
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-01 15:23:29] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')'' in E:\wamp\www\laravel4.2_study\app\routes.php:23
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-01 15:23:54] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Function name must be a string' in E:\wamp\www\laravel4.2_study\app\routes.php:23
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-01 15:24:08] local.ERROR: exception 'ErrorException' with message 'Undefined index: REMOTE_ADDR ' in E:\wamp\www\laravel4.2_study\app\routes.php:23
+Stack trace:
+#0 E:\wamp\www\laravel4.2_study\app\routes.php(23): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'E:\wamp\www\lar...', 23, Array)
+#1 [internal function]: {closure}()
+#2 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#3 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#4 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#5 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(776): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(746): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 E:\wamp\www\laravel4.2_study\vendor\barryvdh\laravel-debugbar\src\Barryvdh\Debugbar\Middleware.php(34): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#8 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Barryvdh\Debugbar\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#9 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#10 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#11 E:\wamp\www\laravel4.2_study\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#12 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(642): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#13 E:\wamp\www\laravel4.2_study\public\index.php(48): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-09-01 15:24:09] local.ERROR: exception 'ErrorException' with message 'Undefined index: REMOTE_ADDR ' in E:\wamp\www\laravel4.2_study\app\routes.php:23
+Stack trace:
+#0 E:\wamp\www\laravel4.2_study\app\routes.php(23): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'E:\wamp\www\lar...', 23, Array)
+#1 [internal function]: {closure}()
+#2 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#3 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#4 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#5 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(776): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(746): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 E:\wamp\www\laravel4.2_study\vendor\barryvdh\laravel-debugbar\src\Barryvdh\Debugbar\Middleware.php(34): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#8 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Barryvdh\Debugbar\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#9 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#10 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#11 E:\wamp\www\laravel4.2_study\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#12 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(642): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#13 E:\wamp\www\laravel4.2_study\public\index.php(48): Illuminate\Foundation\Application->run()
+#14 {main} [] []
