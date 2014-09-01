@@ -25,4 +25,8 @@ Route::get('/show_environment', function() {
     return;
 });
 
+Route::group(array('prefix' => 'admin'), function() {
+    Route::get('login', );
+});
+
 

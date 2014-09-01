@@ -24,17 +24,17 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
+// $env = $app->detectEnvironment(array(
 
-    'local' => array('theOneLast'),
+//     'local' => array('theOneLast'),
 
-));
+// ));
 
 //配置 httpd.conf  SetEnv APP_ENV local
-// $env = $app->detectEnvironment(function() {
-//     return 'local';
-//     //return  empty($_SERVER['APP_ENV'])? 'production': $_SERVER['APP_ENV'];
-// });
+$env = $app->detectEnvironment(function() {
+    return 'local';
+    //return  empty($_SERVER['APP_ENV'])? 'production': $_SERVER['APP_ENV'];
+});
 
 /*
 |--------------------------------------------------------------------------
