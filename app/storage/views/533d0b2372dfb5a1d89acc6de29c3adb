@@ -1,0 +1,30 @@
+<?php $__env->startSection('title'); ?> 
+   <title>这是一个标题</title>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('meta'); ?>
+    <meta name="keywords" content="杨波的bootstrap后台" />
+    <meta name="description" content="杨波的bootstrap3.0后台" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('css'); ?>
+  <!-- basic styles -->
+        <link href="<?php echo asset('admin'); ?>/assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="<?php echo asset('admin'); ?>/assets/css/font-awesome.min.css" />
+        <!--[if IE 7]>
+          <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+        <![endif]-->
+        <!-- page specific plugin styles -->
+        <!-- fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+        <!-- ace styles -->
+        <link rel="stylesheet" href="<?php echo asset('admin'); ?>/assets/css/ace.min.css" />
+        <link rel="stylesheet" href="<?php echo asset('admin'); ?>/assets/css/ace-rtl.min.css" />
+        <!--[if lte IE 8]>
+          <link rel="stylesheet" href="<?php echo asset('admin'); ?>/assets/css/ace-ie.min.css" />
+        <![endif]-->
+        <!-- inline styles related to this page -->
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
