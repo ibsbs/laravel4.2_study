@@ -1,7 +1,7 @@
 <?php
 return array
 (
-    'APP_DEBUG'          => false,
+    'APP_DEBUG'          => true,
     'DATABASE_DRIVER'    => 'mysql',
     'DATABASE_HOST'      => 'localhost',
     'DATABASE_DATABASE'  => 'my_iduoqian',
