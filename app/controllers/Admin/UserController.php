@@ -1,10 +1,11 @@
 <?php
 namespace Admin;
 
-class UserController extends BaseController 
+use View;
+class UserController extends \BaseController 
 {
     public function login()
     {
-        echo 'login ok';
+        return View::make('admin.user.login');
     }
 }
