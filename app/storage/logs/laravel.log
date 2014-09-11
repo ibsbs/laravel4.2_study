@@ -419,3 +419,9 @@ Stack trace:
 #10 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(642): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
 #11 E:\wamp\www\laravel4.2_study\public\index.php(48): Illuminate\Foundation\Application->run()
 #12 {main} [] []
+[2014-09-11 16:38:43] local.ERROR: exception 'InvalidArgumentException' with message 'Command "composer" is not defined.' in E:\wamp\www\laravel4.2_study\vendor\symfony\console\Symfony\Component\Console\Application.php:564
+Stack trace:
+#0 E:\wamp\www\laravel4.2_study\vendor\symfony\console\Symfony\Component\Console\Application.php(190): Symfony\Component\Console\Application->find('composer')
+#1 E:\wamp\www\laravel4.2_study\vendor\symfony\console\Symfony\Component\Console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 E:\wamp\www\laravel4.2_study\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
