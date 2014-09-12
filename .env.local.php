@@ -4,7 +4,7 @@ return array
     'APP_DEBUG'          => true,
     'DATABASE_DRIVER'    => 'mysql',
     'DATABASE_HOST'      => 'localhost',
-    'DATABASE_DATABASE'  => 'my_iduoqian',
+    'DATABASE_DATABASE'  => 'myiduoqian',
     'DATABASE_USERNAME'  => 'root',
     'DATABASE_PASSWORD'  => '',
     'DATABASE_CHARSET'   => 'utf8',
