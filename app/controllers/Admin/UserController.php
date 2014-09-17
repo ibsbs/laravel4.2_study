@@ -2,6 +2,7 @@
 namespace Admin;
 
 use View;
+
 class UserController extends \BaseController 
 {
     public function login()
