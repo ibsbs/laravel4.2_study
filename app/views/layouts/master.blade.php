@@ -12,7 +12,7 @@
   <link href="{{asset('admin')}}/assets/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="{{asset('admin')}}/assets/css/font-awesome.min.css" />
   <!--[if IE 7]>
-    <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+    <link rel="stylesheet" href="{{asset('admin')}}/assets/css/font-awesome-ie7.min.css" />
   <![endif]-->
   <!-- page specific plugin styles -->
   <!-- fonts -->
@@ -28,7 +28,7 @@
 @section('js_head')
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
-  <script src="assets/js/html5shiv.js"></script>
-  <script src="assets/js/respond.min.js"></script>
+  <script src="{{asset('admin')}}/assets/js/html5shiv.js"></script>
+  <script src="{{asset('admin')}}/assets/js/respond.min.js"></script>
   <![endif]-->
 @stop

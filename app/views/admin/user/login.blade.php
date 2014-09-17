@@ -1,16 +1,19 @@
 @extends('layouts.master')
+@section('body')
+  class="login-layout"
+@stop
 @section('content')
-<div class="main-container">
+<div class="main-container ">
   <div class="main-content">
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1">
         <div class="login-container">
           <div class="center">
             <h1> <i class="icon-leaf green"></i>
-              <span class="red">Ace</span>
-              <span class="white">Application</span>
+              <span class="red">后台</span>
+              <span class="white">登陆</span>
             </h1>
-            <h4 class="blue">&copy; Company Name</h4>
+            <h4 class="blue">&copy; 杨波 公司</h4>
           </div>
 
           <div class="space-6"></div>
@@ -20,7 +23,7 @@
               <div class="widget-body">
                 <div class="widget-main">
                   <h4 class="header blue lighter bigger"> <i class="icon-coffee green"></i>
-                    Please Enter Your Information
+                    请输入你的信息
                   </h4>
                   <div class="space-6"></div>
 
@@ -235,7 +238,7 @@
 
 <!--[if !IE]>  -->
 <script type="text/javascript">
-  window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+  window.jQuery || document.write("<script src='{{asset('admin')}}/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
 </script>
 
 <!-- <![endif]-->        
@@ -246,7 +249,7 @@ window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+
 <![endif]-->        
 
 <script type="text/javascript">
-  if("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+  if("ontouchend" in document) document.write("<script src='{{asset('admin')}}/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
 </script>
 
 <!-- inline scripts related to this page -->        

@@ -6,7 +6,7 @@
     @yield('css')
     @yield('js_head')
   </head>
-  <body>
+  <body @yield('body')>
     @yield('content')
     @yield('js_body')
   <body>
