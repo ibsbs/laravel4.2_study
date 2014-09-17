@@ -29,4 +29,8 @@ Route::group(array('prefix' => 'admin'), function() {
     Route::get('login', 'Admin\UserController@login');
 });
 
+Route::group(array('prefix'=>'demo'), function() {
+    Route::controller('curl', 'Demo\CurlDemoController');
+});
+
 
