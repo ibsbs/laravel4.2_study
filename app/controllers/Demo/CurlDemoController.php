@@ -7,8 +7,9 @@ class CurlDemoController extends \BaseController
     {
         //初始化变量
         $cookie_file = 'cookiefile';   #cookie地址
-        $login_url = 'https://account.xiaomi.com/pass/serviceLoginAuth2'; #小米登陆
-        //$login_url = 'http://cd.iduoqian.com/333vgohappy/?c=user&a=login'; #小米登陆
+        //$login_url = 'https://account.xiaomi.com/pass/serviceLoginAuth2'; #小米登陆
+        $login_url = 'http://cd.iduoqian.com/333vgohappy/?c=user&a=login'; #登陆
+        $open_url = 'http://www.iduoqian.com/333vgohappy/?c=channel&a=add';
         $verify_code_url = ''; #验证码url
         $timeout = 1;
         date_default_timezone_set('PRC');   #设置时区 和cookie有关的工作要设置时区
@@ -16,8 +17,8 @@ class CurlDemoController extends \BaseController
         //模拟登陆 
         //初始化curl
         //$userData = 'user=18581877799&_json=true&pwd=YAB4894286&callback=http://order.mi.com/login/callback?followup=http%3A%2F%2Fwww.mi.com&sign=MjMyMGJhNjNmZmM2NTc0YWM4NzdkN2IzMjNlZjhmMzhhODAxMDZiNg,,&sid=mi_eshop&qs=%3Fcallback%3Dhttp%253A%252F%252Forder.mi.com%252Flogin%252Fcallback%253Ffollowup%253Dhttp%25253A%25252F%25252Fwww.mi.com%2526sign%253DMjMyMGJhNjNmZmM2NTc0YWM4NzdkN2IzMjNlZjhmMzhhODAxMDZiNg%252C%252C%26sid%3Dmi_eshop&hidden=&_sign=6f/KJ3piD5EyDCFo/PvvBBLTXxI=&serviceParam={"checkSafePhone":false}&auto=true';
-        $userData = 'user=18581877799&pwd=YAB4894286&auto=true';
-        //$userData = 'username=admin&password=shuaige888';
+        //$userData = 'user=18581877799&pwd=YAB4894286&auto=true';
+        $userData = 'username=admin&password=shuaige888';
         $userData = urlencode($userData);
         $curlLogin = curl_init();
         
@@ -28,14 +29,14 @@ class CurlDemoController extends \BaseController
         curl_setopt($curlLogin, CURLOPT_COOKIESESSION, TRUE); 
         curl_setopt($curlLogin, CURLOPT_COOKIEJAR, $cookie_file);
         curl_setopt($curlLogin, CURLOPT_COOKIEFILE, $cookie_file);
-        curl_setopt($curlLogin, CURLOPT_COOKIE, session_name() . '=' . session_id());
+        //curl_setopt($curlLogin, CURLOPT_COOKIE, session_name() . '=' . session_id());
 
         curl_setopt($curlLogin, CURLOPT_HEADER, false);                 #不把头文件信息作为数据流输出
         curl_setopt($curlLogin, CURLOPT_FOLLOWLOCATION, true);          #允许跳转
 
-        curl_setopt($curlLogin, CURLOPT_SSL_VERIFYPEER, false);         #不进行服务端验证
-        curl_setopt($curlLogin, CURLOPT_SSL_VERIFYHOST, false);             #检查公用名是否存在，是否与主机名匹配
-        curl_setopt($curlLogin, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);   #模拟用户浏览器
+        //curl_setopt($curlLogin, CURLOPT_SSL_VERIFYPEER, false);         #不进行服务端验证
+        //curl_setopt($curlLogin, CURLOPT_SSL_VERIFYHOST, false);             #检查公用名是否存在，是否与主机名匹配
+        //curl_setopt($curlLogin, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);   #模拟用户浏览器
 
         curl_setopt($curlLogin, CURLOPT_POST, true);                    #发送post请求
         curl_setopt($curlLogin, CURLOPT_POSTFIELDS, $userData);         #post发送的数据
@@ -45,21 +46,26 @@ class CurlDemoController extends \BaseController
             ));           
 
         $oo = curl_exec($curlLogin);
-        $login_url = 'http://my.mi.com/portal';
-        curl_setopt($curlLogin, CURLOPT_URL, $login_url);               #设置访问的URL
+        //$login_url = 'http://my.mi.com/portal';
+        curl_setopt($curlLogin, CURLOPT_URL, $open_url);               #设置访问的URL
         curl_setopt($curlLogin, CURLOPT_POST, false);                    #不发送post请求
         //curl_setopt($curlLogin, CURLOPT_HEADER, true);                 #不把头文件信息作为数据流输出
         curl_setopt($curlLogin, CURLOPT_HTTPHEADER, array("Content-type: text/xml"));
         $ooNew = curl_exec($curlLogin);
         curl_close($curlLogin);
-        \Kint::dump($oo);
+        \Kint::dump($ooNew);
     }
 
     public function getTestTwo()
     {
+        // $login_url = 'http://cd.iduoqian.com/333vgohappy/?c=user&a=login'; #登陆
+        // $open_url = 'http://www.iduoqian.com/333vgohappy/';
+        // $data = 'username=admin&password=shuaige888';
+        $login_url = 'http://www.imooc.com/user/login';
+        $open_url = 'http://www.imooc.com/space/index';
         $data='username=8236138@qq.com&password=YAB4894286&remember=1';
         $curlobj = curl_init();         // 初始化
-        curl_setopt($curlobj, CURLOPT_URL, "http://www.imooc.com/user/login");      // 设置访问网页的URL
+        curl_setopt($curlobj, CURLOPT_URL, $login_url);      // 设置访问网页的URL
         curl_setopt($curlobj, CURLOPT_RETURNTRANSFER, true);            // 执行之后不直接打印出来
 
         // Cookie相关设置，这部分设置需要在所有会话开始之前设置
@@ -81,7 +87,7 @@ class CurlDemoController extends \BaseController
             "Content-length: ".strlen($data)
             )); 
         curl_exec($curlobj);    // 执行
-        curl_setopt($curlobj, CURLOPT_URL, "http://www.imooc.com/space/index");
+        curl_setopt($curlobj, CURLOPT_URL, $open_url);
         curl_setopt($curlobj, CURLOPT_POST, 0);  
         curl_setopt($curlobj, CURLOPT_HTTPHEADER, array("Content-type: text/xml"));
         $output =  curl_exec($curlobj);

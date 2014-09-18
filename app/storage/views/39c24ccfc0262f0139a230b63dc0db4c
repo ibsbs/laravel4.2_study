@@ -6,7 +6,7 @@
     <?php echo $__env->yieldContent('css'); ?>
     <?php echo $__env->yieldContent('js_head'); ?>
   </head>
-  <body>
+  <body <?php echo $__env->yieldContent('body'); ?>>
     <?php echo $__env->yieldContent('content'); ?>
     <?php echo $__env->yieldContent('js_body'); ?>
   <body>
