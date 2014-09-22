@@ -9,4 +9,8 @@ class UserController extends \BaseController
     {
         return View::make('admin.user.login');
     }
+    public function register()
+    {
+        return View::make('admin.user.register');
+    }
 }

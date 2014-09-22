@@ -48,12 +48,12 @@
                       <div class="clearfix">
                         <label class="inline">
                           <input type="checkbox" class="ace" />
-                          <span class="lbl">Remember Me</span>
+                          <span class="lbl">记住我</span>
                         </label>
 
                         <button type="button" class="width-35 pull-right btn btn-sm btn-primary">
                           <i class="icon-key"></i>
-                          Login
+                          登陆
                         </button>
                       </div>
 
@@ -62,7 +62,7 @@
                   </form>
 
                   <div class="social-or-login center">
-                    <span class="bigger-110">Or Login Using</span>
+                    <span class="bigger-110">或者用其它方式登陆</span>
                   </div>
 
                   <div class="social-login center">
@@ -85,13 +85,13 @@
                   <div>
                     <a href="#" onclick="show_box('forgot-box'); return false;" class="forgot-password-link">
                       <i class="icon-arrow-left"></i>
-                      I forgot my password
+                      忘记密码
                     </a>
                   </div>
 
                   <div>
                     <a href="#" onclick="show_box('signup-box'); return false;" class="user-signup-link">
-                      I want to register
+                      注册
                       <i class="icon-arrow-right"></i>
                     </a>
                   </div>
