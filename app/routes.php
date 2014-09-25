@@ -32,6 +32,6 @@ Route::group(array('prefix' => 'admin'), function() {
 
 Route::group(array('prefix'=>'demo'), function() {
     Route::controller('curl', 'Demo\CurlDemoController');
+    Route::controller('demo', 'Demo\Democontroller');
 });
-
 
