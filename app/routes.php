@@ -25,7 +25,7 @@ Route::get('/show_environment', function() {
     return;
 });
 
-Route::group(array('prefix' => 'admin'), function() {
+Route::group(array('prefix' => '{lang}/admin'), function($lang) {
     Route::get('login', 'Admin\UserController@login');
     Route::get('register', 'Admin\UserController@register');
 });

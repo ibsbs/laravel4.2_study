@@ -10,10 +10,10 @@
         <div class="login-container">
           <div class="center">
             <h1> <i class="icon-leaf green"></i>
-              <span class="red">后台</span>
-              <span class="white">登陆</span>
+              <span class="red">{{trans('login.background')}}</span>
+              <span class="white">{{Lang::get('login.login_name')}}</span>
             </h1>
-            <h4 class="blue">&copy; 杨波 公司</h4>
+            <h4 class="blue">&copy;{{Lang::get('login.company_name')}}</h4>
           </div>
 
           <div class="space-6"></div>
@@ -23,7 +23,7 @@
               <div class="widget-body">
                 <div class="widget-main">
                   <h4 class="header blue lighter bigger"> <i class="icon-coffee green"></i>
-                    请输入你的信息
+                    {{Lang::get('login.enter_information')}}
                   </h4>
                   <div class="space-6"></div>
 
@@ -48,12 +48,12 @@
                       <div class="clearfix">
                         <label class="inline">
                           <input type="checkbox" class="ace" />
-                          <span class="lbl">记住我</span>
+                          <span class="lbl">{{Lang::get('login.remember')}}</span>
                         </label>
 
                         <button type="button" class="width-35 pull-right btn btn-sm btn-primary">
                           <i class="icon-key"></i>
-                          登陆
+                          {{Lang::get('login.login')}}
                         </button>
                       </div>
 
@@ -62,7 +62,7 @@
                   </form>
 
                   <div class="social-or-login center">
-                    <span class="bigger-110">或者用其它方式登陆</span>
+                    <span class="bigger-110">{{Lang::get('login.or_login')}}</span>
                   </div>
 
                   <div class="social-login center">
@@ -85,13 +85,13 @@
                   <div>
                     <a href="#" onclick="show_box('forgot-box'); return false;" class="forgot-password-link">
                       <i class="icon-arrow-left"></i>
-                      忘记密码
+                      {{Lang::get('login.forgot_password')}}
                     </a>
                   </div>
 
                   <div>
                     <a href="#" onclick="show_box('signup-box'); return false;" class="user-signup-link">
-                      注册
+                      {{Lang::get('login.register')}}
                       <i class="icon-arrow-right"></i>
                     </a>
                   </div>
