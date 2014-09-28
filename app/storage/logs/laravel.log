@@ -1,0 +1,263 @@
+[2014-09-25 16:44:57] local.ERROR: exception 'ErrorException' with message 'pack(): Type E: unknown format code' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:11
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'pack(): Type E:...', 'E:\wamp\www\lar...', 11, Array)
+#1 E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php(11): pack('HEX', '149e9677a5989fd...')
+#2 [internal function]: Demo\DemoController->getAboutArray()
+#3 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#4 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('getAboutArray', Array)
+#5 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(Demo\DemoController), Object(Illuminate\Routing\Route), 'getAboutArray')
+#6 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(962): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'Demo\Democontro...', 'getAboutArray')
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#9 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(776): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(746): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 E:\wamp\www\laravel4.2_study\vendor\barryvdh\laravel-debugbar\src\Middleware.php(34): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Barryvdh\Debugbar\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#16 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#17 E:\wamp\www\laravel4.2_study\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#18 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(642): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#19 E:\wamp\www\laravel4.2_study\public\index.php(48): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2014-09-25 16:55:49] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')', expecting ';'' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:11
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-25 16:56:25] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')', expecting ';'' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:11
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-25 17:19:02] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '%'' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:11
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-25 17:26:39] local.ERROR: exception 'ErrorException' with message 'hex2bin(): Hexadecimal input string must have an even length' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:22
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'hex2bin(): Hexa...', 'E:\wamp\www\lar...', 22, Array)
+#1 E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php(22): hex2bin('254')
+#2 [internal function]: Demo\DemoController->getAboutArray()
+#3 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#4 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('getAboutArray', Array)
+#5 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(Demo\DemoController), Object(Illuminate\Routing\Route), 'getAboutArray')
+#6 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(962): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'Demo\Democontro...', 'getAboutArray')
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#9 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(776): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(746): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 E:\wamp\www\laravel4.2_study\vendor\barryvdh\laravel-debugbar\src\Middleware.php(34): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Barryvdh\Debugbar\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#16 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#17 E:\wamp\www\laravel4.2_study\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#18 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(642): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#19 E:\wamp\www\laravel4.2_study\public\index.php(48): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2014-09-25 17:27:16] local.ERROR: exception 'ErrorException' with message 'hex2bin(): Hexadecimal input string must have an even length' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:22
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'hex2bin(): Hexa...', 'E:\wamp\www\lar...', 22, Array)
+#1 E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php(22): hex2bin('254')
+#2 [internal function]: Demo\DemoController->getAboutArray()
+#3 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#4 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('getAboutArray', Array)
+#5 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(Demo\DemoController), Object(Illuminate\Routing\Route), 'getAboutArray')
+#6 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(962): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'Demo\Democontro...', 'getAboutArray')
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#9 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(776): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(746): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 E:\wamp\www\laravel4.2_study\vendor\barryvdh\laravel-debugbar\src\Middleware.php(34): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Barryvdh\Debugbar\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#16 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#17 E:\wamp\www\laravel4.2_study\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#18 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(642): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#19 E:\wamp\www\laravel4.2_study\public\index.php(48): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2014-09-25 17:29:41] local.ERROR: exception 'ErrorException' with message 'md5() expects at most 2 parameters, 3 given' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:23
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'md5() expects a...', 'E:\wamp\www\lar...', 23, Array)
+#1 E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php(23): md5('c52f1bd66cc19d0...', '---', '?/??l???b???'?:...')
+#2 [internal function]: Demo\DemoController->getAboutArray()
+#3 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#4 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('getAboutArray', Array)
+#5 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(Demo\DemoController), Object(Illuminate\Routing\Route), 'getAboutArray')
+#6 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(962): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'Demo\Democontro...', 'getAboutArray')
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#9 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(776): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(746): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 E:\wamp\www\laravel4.2_study\vendor\barryvdh\laravel-debugbar\src\Middleware.php(34): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Barryvdh\Debugbar\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#16 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#17 E:\wamp\www\laravel4.2_study\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#18 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(642): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#19 E:\wamp\www\laravel4.2_study\public\index.php(48): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2014-09-25 17:30:57] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ','' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:23
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-25 17:31:22] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ','' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:23
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-25 17:33:54] local.ERROR: exception 'ErrorException' with message 'hex2bin(): Hexadecimal input string must have an even length' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:20
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'hex2bin(): Hexa...', 'E:\wamp\www\lar...', 20, Array)
+#1 E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php(20): hex2bin('171')
+#2 [internal function]: Demo\DemoController->getAboutArray()
+#3 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#4 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('getAboutArray', Array)
+#5 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(Demo\DemoController), Object(Illuminate\Routing\Route), 'getAboutArray')
+#6 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(962): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'Demo\Democontro...', 'getAboutArray')
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#9 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(776): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(746): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 E:\wamp\www\laravel4.2_study\vendor\barryvdh\laravel-debugbar\src\Middleware.php(34): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Barryvdh\Debugbar\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#16 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#17 E:\wamp\www\laravel4.2_study\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#18 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(642): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#19 E:\wamp\www\laravel4.2_study\public\index.php(48): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2014-09-25 17:43:16] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined function Demo\debin()' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:22
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-25 17:43:30] local.ERROR: exception 'ErrorException' with message 'hex2bin(): Hexadecimal input string must have an even length' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:23
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'hex2bin(): Hexa...', 'E:\wamp\www\lar...', 23, Array)
+#1 E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php(23): hex2bin('1010100')
+#2 [internal function]: Demo\DemoController->getAboutArray()
+#3 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#4 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('getAboutArray', Array)
+#5 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(Demo\DemoController), Object(Illuminate\Routing\Route), 'getAboutArray')
+#6 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(962): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'Demo\Democontro...', 'getAboutArray')
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#9 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(776): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(746): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 E:\wamp\www\laravel4.2_study\vendor\barryvdh\laravel-debugbar\src\Middleware.php(34): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Barryvdh\Debugbar\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#16 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#17 E:\wamp\www\laravel4.2_study\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#18 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(642): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#19 E:\wamp\www\laravel4.2_study\public\index.php(48): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2014-09-25 17:51:12] local.ERROR: exception 'ErrorException' with message 'hex2bin(): Hexadecimal input string must have an even length' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:23
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'hex2bin(): Hexa...', 'E:\wamp\www\lar...', 23, Array)
+#1 E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php(23): hex2bin('1010100')
+#2 [internal function]: Demo\DemoController->getAboutArray()
+#3 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#4 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('getAboutArray', Array)
+#5 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(Demo\DemoController), Object(Illuminate\Routing\Route), 'getAboutArray')
+#6 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(962): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'Demo\Democontro...', 'getAboutArray')
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#9 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#11 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(776): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(746): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 E:\wamp\www\laravel4.2_study\vendor\barryvdh\laravel-debugbar\src\Middleware.php(34): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#14 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Barryvdh\Debugbar\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#16 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#17 E:\wamp\www\laravel4.2_study\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#18 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(642): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#19 E:\wamp\www\laravel4.2_study\public\index.php(48): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2014-09-25 18:02:36] local.ERROR: exception 'ErrorException' with message 'Undefined variable: value' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:19
+Stack trace:
+#0 E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php(19): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'E:\wamp\www\lar...', 19, Array)
+#1 [internal function]: Demo\DemoController->getAboutArray()
+#2 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#3 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('getAboutArray', Array)
+#4 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(Demo\DemoController), Object(Illuminate\Routing\Route), 'getAboutArray')
+#5 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(962): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'Demo\Democontro...', 'getAboutArray')
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#8 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#10 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(776): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(746): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 E:\wamp\www\laravel4.2_study\vendor\barryvdh\laravel-debugbar\src\Middleware.php(34): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#13 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Barryvdh\Debugbar\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#14 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#15 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#16 E:\wamp\www\laravel4.2_study\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#17 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(642): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#18 E:\wamp\www\laravel4.2_study\public\index.php(48): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2014-09-28 17:02:12] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Demo\GuzzleHttp\Client' not found' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:15
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-28 17:03:10] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Demo\Client' not found' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:15
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-28 17:03:28] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'getGuzzleHttp\Client' not found' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:15
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-28 17:03:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Client' not found' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:15
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-28 17:04:10] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Demo\Client' not found' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:15
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-28 17:04:24] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'getGuzzleHttp\Client' not found' in E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php:15
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-09-28 17:06:18] local.ERROR: exception 'GuzzleHttp\Exception\ClientException' with message 'Client error response [url] https://api.github.com/user [status code] 401 [reason phrase] Unauthorized' in E:\wamp\www\laravel4.2_study\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php:71
+Stack trace:
+#0 E:\wamp\www\laravel4.2_study\vendor\guzzlehttp\guzzle\src\Subscriber\HttpError.php(31): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Message\Request), Object(GuzzleHttp\Message\Response))
+#1 E:\wamp\www\laravel4.2_study\vendor\guzzlehttp\guzzle\src\Event\Emitter.php(105): GuzzleHttp\Subscriber\HttpError->onComplete(Object(GuzzleHttp\Event\CompleteEvent), 'complete')
+#2 E:\wamp\www\laravel4.2_study\vendor\guzzlehttp\guzzle\src\Event\RequestEvents.php(75): GuzzleHttp\Event\Emitter->emit('complete', Object(GuzzleHttp\Event\CompleteEvent))
+#3 E:\wamp\www\laravel4.2_study\vendor\guzzlehttp\guzzle\src\Adapter\Curl\MultiAdapter.php(179): GuzzleHttp\Event\RequestEvents::emitComplete(Object(GuzzleHttp\Adapter\Transaction), Array)
+#4 E:\wamp\www\laravel4.2_study\vendor\guzzlehttp\guzzle\src\Adapter\Curl\MultiAdapter.php(160): GuzzleHttp\Adapter\Curl\MultiAdapter->processResponse(Object(GuzzleHttp\Adapter\Transaction), Array, Object(GuzzleHttp\Adapter\Curl\BatchContext))
+#5 E:\wamp\www\laravel4.2_study\vendor\guzzlehttp\guzzle\src\Adapter\Curl\MultiAdapter.php(139): GuzzleHttp\Adapter\Curl\MultiAdapter->processMessages(Object(GuzzleHttp\Adapter\Curl\BatchContext))
+#6 E:\wamp\www\laravel4.2_study\vendor\guzzlehttp\guzzle\src\Adapter\Curl\MultiAdapter.php(103): GuzzleHttp\Adapter\Curl\MultiAdapter->perform(Object(GuzzleHttp\Adapter\Curl\BatchContext))
+#7 E:\wamp\www\laravel4.2_study\vendor\guzzlehttp\guzzle\src\Adapter\StreamingProxyAdapter.php(34): GuzzleHttp\Adapter\Curl\MultiAdapter->send(Object(GuzzleHttp\Adapter\Transaction))
+#8 E:\wamp\www\laravel4.2_study\vendor\guzzlehttp\guzzle\src\Client.php(193): GuzzleHttp\Adapter\StreamingProxyAdapter->send(Object(GuzzleHttp\Adapter\Transaction))
+#9 E:\wamp\www\laravel4.2_study\vendor\guzzlehttp\guzzle\src\Client.php(156): GuzzleHttp\Client->send(Object(GuzzleHttp\Message\Request))
+#10 E:\wamp\www\laravel4.2_study\app\controllers\Demo\DemoController.php(17): GuzzleHttp\Client->get('https://api.git...', Array)
+#11 [internal function]: Demo\DemoController->getGuzzleHttp()
+#12 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Controller.php(231): call_user_func_array(Array, Array)
+#13 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(93): Illuminate\Routing\Controller->callAction('getGuzzleHttp', Array)
+#14 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(62): Illuminate\Routing\ControllerDispatcher->call(Object(Demo\DemoController), Object(Illuminate\Routing\Route), 'getGuzzleHttp')
+#15 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(962): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request), 'Demo\Democontro...', 'getGuzzleHttp')
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Route.php(109): call_user_func_array(Object(Closure), Array)
+#18 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1028): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#19 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Routing\Router.php(996): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#20 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(777): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(747): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 E:\wamp\www\laravel4.2_study\vendor\barryvdh\laravel-debugbar\src\Middleware.php(33): Illuminate\Foundation\Application->handle(Object(Illuminate\Http\Request), 1, true)
+#23 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Session\Middleware.php(72): Barryvdh\Debugbar\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#24 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Queue.php(47): Illuminate\Session\Middleware->handle(Object(Illuminate\Http\Request), 1, true)
+#25 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Cookie\Guard.php(51): Illuminate\Cookie\Queue->handle(Object(Illuminate\Http\Request), 1, true)
+#26 E:\wamp\www\laravel4.2_study\vendor\stack\builder\src\Stack\StackedHttpKernel.php(23): Illuminate\Cookie\Guard->handle(Object(Illuminate\Http\Request), 1, true)
+#27 E:\wamp\www\laravel4.2_study\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(643): Stack\StackedHttpKernel->handle(Object(Illuminate\Http\Request))
+#28 E:\wamp\www\laravel4.2_study\public\index.php(48): Illuminate\Foundation\Application->run()
+#29 {main} [] []
